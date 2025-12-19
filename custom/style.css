@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+h1 {
+  text-align: center;
+}
+
+.time {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.time.aho {
+  color: red;
+  font-weight: bold;
+}
+
+.bg-nabe {
+  width: 615px;
+  height: 300px;
+  background-size: cover;
+  margin: auto;
+}
+
+.bg-nabe {
+  background-image: url('images/nabe.jpg');
+}
+
+.bg-nabe.aho {
+  background-image: url('images/nabe_aho.jpg');
+  animation: aho .1s infinite;
+}
+
+@keyframes aho {
+  0%, 100% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.1;
+  }
+}

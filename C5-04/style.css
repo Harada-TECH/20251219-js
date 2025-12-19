@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+}
+
+/* 基本編：動画を自動再生する */
+
+.video-container {
+  position: relative;
+}
+
+.video-heading {
+  background: #000;
+  display: inline-block;
+  padding: 1rem;
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+}
+
+.video-bg {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+/* 応用編：ホバーすると再生する */
+.hover-container {
+  position: relative;
+}
+
+.hover-img,
+.hover-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 600px;
+  height: auto;
+  display: block;
+}
+
+.hover-video {
+  display: none;  /* 初期状態では非表示 */
+}

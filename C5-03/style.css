@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+}
+
+h2 {
+  background: #000;
+  display: inline-block;
+  padding: 1rem;
+  color: #fff;
+}
+
+/* 基本編：4枚の背景画像を切り替える */
+.bg-img {
+  background-image: url("images/bg1.jpg");
+  background-size: cover;
+  height: 80vh;
+  animation: change-image 15s infinite;
+}
+
+@keyframes change-image {
+  0%, 100% { background-image: url('images/bg1.jpg'); }
+  25% { background-image: url('images/bg2.jpg'); }
+  50% { background-image: url('images/bg3.jpg'); }
+  75% { background-image: url('images/bg4.jpg'); }
+}
+
+/* 応用編：時間帯に応じて背景画像を切り替える */
+
+.bg-time {
+  background-size: cover;
+  height: 80vh;
+}
+
+.morning {
+  background-image: url('images/morning.jpg');
+}
+
+.daytime {
+  background-image: url('images/daytime.jpg');
+}
+
+.night {
+  background-image: url('images/night.jpg');
+}
